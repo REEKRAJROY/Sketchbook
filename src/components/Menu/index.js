@@ -3,14 +3,18 @@ import { faPencil, faEraser, faRotateLeft, faRotateRight, faFileArrowDown } from
 import styles from './index.module.css'
 import cx from 'classnames'
 import { useDispatch, useSelector } from 'react-redux'
-import { menuItemClick, actionMenuItem } from '@/slice/menuSlice'
+import { menuItemClick, actionItemClick } from '@/slice/menuSlice'
 import { MENU_ITEMS } from '@/constants'
 
 const Menu = () => {
     const dispatch = useDispatch() //to use the logic written inside slice
     const activeMenuItem = useSelector((state) => state.menu.activeMenuItem)
     const handleMenuClick = (itemName) => {
-        dispatch(menuItemClick(itemName))//this goes into the action param of menuItemClick in
+        dispatch(menuItemClick(itemName))//this goes into the action param of menuItemClick method defined inside menuSlice.js
+    }
+
+    const handleActionItemClick = (itemName) => {
+        dispatch(actionItemClick(itemName))//this goes into the action param of menuItemClick method defined inside menuSlice.js
     }
 
     return(
@@ -21,13 +25,13 @@ const Menu = () => {
             <div className={cx(styles.iconWrapper, {[styles.active]: activeMenuItem === MENU_ITEMS.ERASER})} onClick={() => handleMenuClick(MENU_ITEMS.ERASER)}>
             <FontAwesomeIcon icon={faEraser} className={styles.icon}/>
             </div>
-            <div className={styles.iconWrapper}>
+            <div className={styles.iconWrapper} onClick={() => handleActionItemClick(MENU_ITEMS.UNDO)}>
             <FontAwesomeIcon icon={faRotateLeft} className={styles.icon} />
             </div>
-            <div className={styles.iconWrapper}>
+            <div className={styles.iconWrapper} onClick={() => handleActionItemClick(MENU_ITEMS.REDO)}>
             <FontAwesomeIcon icon={faRotateRight} className={styles.icon} />
             </div>
-            <div className={styles.iconWrapper}>
+            <div className={styles.iconWrapper} onClick={() => handleActionItemClick(MENU_ITEMS.DOWNLOAD)}>
             <FontAwesomeIcon icon={faFileArrowDown} className={styles.icon} />
             </div>
         </div>
