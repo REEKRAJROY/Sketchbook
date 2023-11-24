@@ -27,7 +27,7 @@ The project has three sub-folders:-
 (2) **Toolbox**
 <br>
 <br>
-This has context to the colors and the brush stroke sizes respectively. These are changed based on the current active menu item i.e., pencil or eraser, and emit the change in config to **Board/index.js**
+This has context to the colors and the brush stroke sizes respectively. These are changed based on the current active menu item i.e., pencil or eraser, and emit the change in config to **Board/index.js**.
 <br>
 <br>
 (3) **Board**
