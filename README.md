@@ -11,7 +11,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 <br>
 <br>
-Visit [https://github.com/REEKRAJROY/sketchbook-backend](sketchbook-backend]) to run the backend service. By default, it runs on [http://localhost:3000](http://localhost:3000). Change this PORT number, go to **src/socket.js**, and copy-paste the PORT number under '' in the url variable. Ensure both the services are running for web sockets to emit events.
+Visit [sketchbook-backend](https://github.com/REEKRAJROY/sketchbook-backend) to run the backend service. By default, it runs on [http://localhost:3000](http://localhost:3000). Change this PORT number, go to **src/socket.js**, and copy-paste the PORT number under '' in the url variable. Ensure both the services are running for web sockets to emit events.
 
 ## 🚶 Walkthrough
 
@@ -40,8 +40,8 @@ All the methods leveraged from the canvas api are consumed here. The events are 
 
 - JsCafe's implementation: [youtu.be/JsCafe](https://youtu.be/Uh10f2T1d3c?feature=shared)
 - Fontawesome for icons: [fontawesome.com](https://fontawesome.com)
-- Canvas API: (https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)[Canvas_API]
-- Socket io: (https://socket.io/docs/v4/)[socket.io]
+- Canvas API: [Canvas_API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+- Socket io: [socket.io](https://socket.io/docs/v4/)
 
 ## 🚀 Features
 
