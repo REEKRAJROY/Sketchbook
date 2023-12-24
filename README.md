@@ -55,6 +55,12 @@ All the methods leveraged from the canvas api are consumed here. The events are 
 
 https://github.com/REEKRAJROY/Sketchbook/assets/55712612/697f51c3-f5c5-4fae-aff4-139ecd5dec42
 
+## 📒 Problems faced
+
+- Unknown at rule @applycss(unknownAtRules) while using @apply form tailwindcss. This warning can be fixed by going to code editor settings and to select ignore from dropdown box for Unknown at rule.
+-  useEffect hook caused error of same toolbox properties being applied even after updating the color and brush size. This was fixed by using useLayoutEffect.
+- Currently the bg of the canvas is not getting downloaded. This has to be rectified by applying a white bg while downloading the picture.
+
 
 
 
